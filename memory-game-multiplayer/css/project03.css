@@ -132,9 +132,29 @@ body {
     object-fit: contain;
   }
   
-  /* Matched cards */
-  .card.matched .card-back {
-    background-color: #9E6F21; /* Warm Golden Brown */
+  #player1Label {
+    color: red; /* Color for Player 1 */
+  }
+  
+  /* Matched cards for player 1 */
+  .card.matched.player1 .card-back {
+    background-color: red;
+  }
+  
+  #player2Label {
+    color: blue; /* Color for Player 2 */
+  }
+
+  /* Matched cards for player 2 */
+  .card.matched.player2 .card-back {
+    background-color: blue;
+  }
+
+  /* Tells players whose turn it is */
+  #turnIndicator {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
   }
   
   /* Restart button */
